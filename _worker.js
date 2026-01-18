@@ -787,12 +787,7 @@ async function KV(request, env, txt = 'ADD.txt', guest) {
 						<div class="section-subtitle">点击链接将自动进行复制并生成二维码</div>
 						
 						<div class="subscription-links">
-							<div class="link-item">
-								<div class="link-label">自适应订阅</div>
-								<a href="javascript:void(0)" onclick="copyToClipboard('https://${url.hostname}/${mytoken}','qrcode_0')" class="link-url">https://${url.hostname}/${mytoken}</a>
-								<div id="qrcode_0" class="qrcode-container" style="display:none;"></div>
-							</div>
-							
+														
 							<div class="link-item">
 								<div class="link-label">Base64订阅</div>
 								<a href="javascript:void(0)" onclick="copyToClipboard('https://${url.hostname}/${mytoken}?b64','qrcode_1')" class="link-url">https://${url.hostname}/${mytoken}?b64</a>
@@ -803,6 +798,12 @@ async function KV(request, env, txt = 'ADD.txt', guest) {
 								<div class="link-label">Clash订阅</div>
 								<a href="javascript:void(0)" onclick="copyToClipboard('https://${url.hostname}/${mytoken}?clash','qrcode_2')" class="link-url">https://${url.hostname}/${mytoken}?clash</a>
 								<div id="qrcode_2" class="qrcode-container" style="display:none;"></div>
+							</div>
+
+							<div class="link-item">
+								<div class="link-label">Clash订阅增强</div>
+								<a href="javascript:void(0)" onclick="copyToClipboard('https://subck.594880.xyz/clash?config=https://${url.hostname}/${mytoken}','qrcode_0')" class="link-url">https://subck.594880.xyz/clash?config=https://${url.hostname}/${mytoken}</a>
+								<div id="qrcode_0" class="qrcode-container" style="display:none;"></div>
 							</div>
 							
 							<div class="link-item">
@@ -833,11 +834,6 @@ async function KV(request, env, txt = 'ADD.txt', guest) {
 							<div class="divider"></div>
 							<div class="subscription-links">
 								<div class="link-item">
-									<div class="link-label">自适应订阅</div>
-									<a href="javascript:void(0)" onclick="copyToClipboard('https://${url.hostname}/sub?token=${guest}','guest_0')" class="link-url">https://${url.hostname}/sub?token=${guest}</a>
-									<div id="guest_0" class="qrcode-container" style="display:none;"></div>
-								</div>
-								<div class="link-item">
 									<div class="link-label">Base64订阅</div>
 									<a href="javascript:void(0)" onclick="copyToClipboard('https://${url.hostname}/sub?token=${guest}&b64','guest_1')" class="link-url">https://${url.hostname}/sub?token=${guest}&b64</a>
 									<div id="guest_1" class="qrcode-container" style="display:none;"></div>
@@ -846,6 +842,11 @@ async function KV(request, env, txt = 'ADD.txt', guest) {
 									<div class="link-label">Clash订阅</div>
 									<a href="javascript:void(0)" onclick="copyToClipboard('https://${url.hostname}/sub?token=${guest}&clash','guest_2')" class="link-url">https://${url.hostname}/sub?token=${guest}&clash</a>
 									<div id="guest_2" class="qrcode-container" style="display:none;"></div>
+								</div>
+								<div class="link-item">
+									<div class="link-label">Clash订阅增强</div>
+									<a href="javascript:void(0)" onclick="copyToClipboard('https://subck.594880.xyz/clash?config=https://${url.hostname}/sub?token=${guest}','guest_0')" class="link-url">https://subck.594880.xyz/clash?config=https://${url.hostname}/sub?token=${guest}</a>
+									<div id="guest_0" class="qrcode-container" style="display:none;"></div>
 								</div>
 								<div class="link-item">
 									<div class="link-label">Singbox订阅</div>
